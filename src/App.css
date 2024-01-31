@@ -1,0 +1,43 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            height: 100vh;
+        }
+
+        .video {
+            width: 100vw;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .dark-mode {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            z-index: 999;
+            width: 100vw;
+            height: 100vh;
+            opacity: 0;
+        }
+
+        label {
+            position: absolute;
+            z-index: 99999;
+            top: 10px;
+            left: 10px;
+            font-size: 1.5rem;
+            display: flex;
+            align-self: center;
+            gap: 10px;
+        }
+
+        label input {
+            width: 30px;
+            height: 30px;
+            mix-blend-mode: difference;
+        }
